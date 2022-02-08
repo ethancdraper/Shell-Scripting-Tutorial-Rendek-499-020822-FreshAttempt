@@ -1,0 +1,54 @@
+Last login: Tue Feb  8 14:47:31 on ttys000
+ethandraper@Ethans-MacBook-Air ~ % chmod +x Task1234
+chmod: Task1234: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod +x Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % ./Task1234.sh
+zsh: no such file or directory: ./Task1234.sh
+ethandraper@Ethans-MacBook-Air ~ % ./ Task1234.sh
+zsh: permission denied: ./
+ethandraper@Ethans-MacBook-Air ~ % chmod u=rwx,g=r,o=r Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % ./ Task1234.sh
+zsh: permission denied: ./
+ethandraper@Ethans-MacBook-Air ~ % chmod 711 ./Task1234.sh
+chmod: ./Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod 711 ./ Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod +x Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod +x ./ Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod 777
+usage:	chmod [-fhv] [-R [-H | -L | -P]] [-a | +a | =a  [i][# [ n]]] mode|entry file ...
+	chmod [-fhv] [-R [-H | -L | -P]] [-E | -C | -N | -i | -I] file ...
+ethandraper@Ethans-MacBook-Air ~ % chmod 777 Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod 711 ./Task1234.sh
+chmod: ./Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod 777 ./Task1234.sh
+chmod: ./Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % ./ Task1234.sh
+zsh: permission denied: ./
+ethandraper@Ethans-MacBook-Air ~ % ls -l Task1234t.sh
+ls: Task1234t.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % ls -l ./Task1234t.sh
+ls: ./Task1234t.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod u+x Task1234t.sh
+chmod: Task1234t.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ %  ls -l ./Task1234.sh
+ls: ./Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ %  ls -l Task1234.sh
+ls: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod u+x Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % ./ Task1234.sh
+zsh: permission denied: ./
+ethandraper@Ethans-MacBook-Air ~ % chmod u+x Task1234.sh
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % chmod u+x Task123.sh
+chmod: Task123.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ % sudo chmod +x Task1234.sh    
+Password:
+chmod: Task1234.sh: No such file or directory
+ethandraper@Ethans-MacBook-Air ~ %
